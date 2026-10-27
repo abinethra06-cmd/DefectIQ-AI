@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+runs/
+*.pt
+inspections.db
+wheels/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pyc
+.DS_Store

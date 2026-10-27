@@ -1,0 +1,27 @@
+type_weights:
+  crazing: 0.6
+  inclusion: 0.8
+  patches: 0.5
+  pitted_surface: 0.7
+  rolled-in_scale: 0.6
+  scratches: 0.4
+
+size_full_at: 0.10
+critical_zone: [0.25, 0.25, 0.75, 0.75]
+zone_multiplier: 1.5
+
+thresholds:
+  rework: 30
+  reject: 70
+
+min_confidence: 0.25
+review_below: 0.50
+
+profiles:
+  Standard:
+    thresholds: {rework: 30, reject: 70}
+  Strict (critical parts):
+    thresholds: {rework: 15, reject: 45}
+    zone_multiplier: 2.0
+  Lenient (cosmetic parts):
+    thresholds: {rework: 45, reject: 85}
